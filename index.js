@@ -1,3 +1,3 @@
-import { Model } from "./Model/Model";
-import { Repository } from "./Repository/Repository";
+import { PersonModel } from "./Model/PersonModel";
+import { PersonRepository } from "./Repository/PersonRepository";
 
