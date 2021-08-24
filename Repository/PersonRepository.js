@@ -11,10 +11,10 @@ export class PersonRepository{
         this.api.post("Person",model).then(x => console.log(x.status));
     }
     async read(){
-        return  await (this.api.get("Person").then()).data;
+        return  (await (this.api.get("Person").then())).data;
     }
     read_by_id(id){
-        return await (this.api.get(`Person/${id}`).then()).data;
+        return (await (this.api.get(`Person/${id}`).then())).data;
     }
     uptade(model){
         this.api.put(`Person/${model.id}`,model).then(x => console.log(x.status));
