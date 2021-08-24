@@ -16,6 +16,7 @@
     "url": "https://github.com/vinicius-vs/NodeJsApiDupla/issues"
   },
   "homepage": "https://github.com/vinicius-vs/NodeJsApiDupla#readme",
+  "type": "module",
   "dependencies": {
     "action": "0.0.1",
     "axios": "^0.21.1"
