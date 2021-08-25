@@ -19,4 +19,10 @@ export class TypeUserRepository{
     async ReadById(id){
         return (await(this.api.get(`TypeUser/${id}`).then())).data
     }
+    uptade(model){
+        this.api.put(`TypeUser/${model.id}`,model).then(x => console.log(x.status));
+    }
+    delete(id){
+        this.api.delete(`TypeUser/${id}`).then(x => console.log(x.status));
+    }
 }
