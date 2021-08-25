@@ -1,11 +1,10 @@
-import {TypeUserModel} from './Model/TypeUserModel.js';
-import {UserModel} from './Model/UserModel.js';
-import {PersonModel} from './Model/PersonModel.js';
-import {PersonRepository} from "./Repository/PersonRepository.js";
-
+import { TypeUserModel } from './Model/TypeUserModel.js';
+import { UserModel } from './Model/UserModel.js';
+import { PersonModel } from './Model/PersonModel.js';
+import { PersonRepository } from "./Repository/PersonRepository.js";
 
 let modeltypeUser = new TypeUserModel();
-modeltypeUser.name = "john";
+modeltypeUser.name = "Melão";
 modeltypeUser.description = "meu nome não é jonh";
 
 let modelUser = new UserModel();
@@ -21,7 +20,6 @@ modelPerson.document = "123";
 modelPerson.User = modelUser;
 
 let repository = new PersonRepository();
-
 
 repository.create(modelPerson);
  //repository.delete();
